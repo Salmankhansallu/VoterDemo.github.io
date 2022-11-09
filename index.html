@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTER PORTAL</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Inknut+Antiqua:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css.css">
+  </head>
+  
+<body>
+   <div class="head">
+       <img src="LOGO.png" class="logo"><img src="u.jpg" class="gi">
+       <img src="logow.png" class="g">
+       <p class=texthindi>राष्ट्रीय मतदान सेवा <br>डेमो पोर्टल</p><img src="logow.png" class="g">
+       <p class="span"> NATIONAL VOTERS SERVICE <br>DEMO PORTAL</p></div>
+  <div class="my"><button class="testbutton">A+</button><button class="testbutton">A-</button></div>
+  <div class="bt">
+    <select id="country" name="Language">
+      <option value="australia">Language</option>
+      <option value="canada">English</option>
+      <option value="canada">Hindi</option>
+    </select>
+  </div><br><br>
+    <p class="p">Note : Fields marked with asterisks ( * ) are mandatory</p>
+   
+  <div class="box">
+     <div class="box1">
+           <p>Type 6<br>[See rule 13(1) and 26]</p>
+          </div>
+
+     <div class="box2">
+    <p>Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency
+    </p>
+  </div>
+
+
+<p>
+In service:<br>Electoral Registration Officer,</p>
+
+      <div class="reg" >
+     <div class="main">
+         <form class="form" name = "registerationform" method="" action="welcome.html" onsubmit="return regvalidate();">
+         <label>State  <span>*</span></label>
+<select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="dist1">state1</option>
+  <option value="dist2">state2</option>
+  <option value="dist3">state3</option>
+  
+</select>
+             <br>
+             <label>District <span>*</span></label>
+<select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="dist1">dist1</option>
+  <option value="dist2">dist2</option>
+  <option value="dist3">dist3</option>
+  
+</select>
+<br>
+             <label for="select">Legislative Assembly / Parlimentary 
+    
+    constituency  <span>*</span></label>
+
+  <select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="Link1">Link1</option>
+  <option value="Link2">Link2</option>
+  <option value="Link3">Link3</option>
+  
+</select> 
+         </form>
+          </div>
+      </div>
+      <br>
+<!--
+<div class="con">
+<div class="con1">
+<label for="select">State <span>*</span></label>
+
+<select style="margin-left: 22px;" name="state" id="btn">
+ <option value="none">Select</option>
+  <option value="state1">state1</option>
+  <option value="state2">state2</option>
+  <option value="state3">state3</option>
+  
+</select>
+    </div>
+
+<div class="con1">
+<label for="select">District <span>*</span></label>
+
+<select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="dist1">dist1</option>
+  <option value="dist2">dist2</option>
+  <option value="dist3">dist3</option>
+  
+</select>
+</div>
+    <div class="con1">
+    <label for="select">Legislative Assembly / Parlimentary 
+    
+    constituency  <span>*</span></label>
+
+  <select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="Link1">Link1</option>
+  <option value="Link2">Link2</option>
+  <option value="Link3">Link3</option>
+  
+</select> 
+  </div>
+</div>
+-->
+<div class="service">
+      <p>I request that my name be included in electoral rolls for all the aforesaid areas.</p>
+
+<label class="container">  First time voter
+  <input type="radio"  name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">  Due to transfer from other meeting areas.
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<br><p>Below are specifications in support of my claim to be included in the electoral rolls.</p>
+<div class="box2">
+  <p>Mandatory specifications
+  </p>
+</div> 
+
+      </div>
+
+
+    
+<div class="reg" >
+     <div class="main">
+         <form class="form" name = "registerationform" method="" action="welcome.html" onsubmit="return regvalidate();">
+           <label>(A) Name <span>*</span></label> 
+             <input type="text" name="fnametxt">
+             <br>
+             <label>(B) Surname (if any)   <span>*</span></label> 
+             <input type="text" name="snametxt">
+             <br>
+             <label>(C) Name of the applicant's relative<span>*</span></label> 
+             <input type="text" name="unametxt">
+             <br>
+             <label>(D) Nickname of the applicant's relative <span>*</span></label> 
+             <input type="text" name="emailtxt">
+             <br>
+             <label>(E) Type of the relationship <span>*</span></label>
+              <select style="margin-left: 10px;" name="relation" id="btn">
+             <option value="none">Select</option>
+              <option value="Link1">Link1</option>
+              <option value="Link2">Link2</option>
+              <option value="Link3">Link3</option>
+  
+</select> 
+             <br>
+             <label>(F) Age [on January 1 of the current calender] <span>*</span></label>
+             <br>
+             <div class="yearMonth">
+             <select style="margin-left: 10px;" name="year" id="btn">
+             <option value="none">Year</option>
+              <option value="Year1">Link1</option>
+              <option value="Year2">Link2</option>
+              <option value="Year3">Link3</option>
+  
+</select> 
+                 <select style="margin-left: 10px;" name="year" id="btn">
+             <option value="none">Month</option>
+              <option value="Month1">Link1</option>
+              <option value="Month2">Link2</option>
+              <option value="Month3">Link3</option>
+  
+</select> 
+             </div> 
+             
+            <h5 style="color:black;
+font-family:'Times New Roman', Times, serif;
+text-align: center; margin-top: 20px;">Or</h5>
+             <br>
+             <label>(F) Date of birth (in the form of day/ month/ year) (if known)<span>*</span>
+             </label>
+             <input type="date" />
+             <br>
+             <label>(G) Gender<span>*</span>
+                 </label>
+             <label class="container">  Male
+              <input type="radio"  name="radio">
+              <span class="checkmark"></span>
+            </label>
+             <label class="container">  Female
+              <input type="radio"  name="radio">
+              <span class="checkmark"></span>
+            </label>
+             <label class="container">  Other
+              <input type="radio"  name="radio">
+              <span class="checkmark"></span>
+            </label>
+                
+            <br><br>
+         </form>
+         <div class="box2">
+      <p> (H) Current address, whose applicant is nominally resident
+      </p>
+    </div>
+      <br>
+         <form class="form">
+         <label>(A) House No. <span>*</span></label> 
+             <input type="text" name="houseNo" onblur="validate()">
+             <br>
+             <label>(B) Street / area / location <span>*</span></label> 
+             <input type="text" name="street" onblur="validate()">
+             <br>
+              <label>(C) City / Village <span>*</span></label> 
+             <input type="text" name="village" onblur="validate()">
+             <br>
+             <label>(D) Email <span>*</span></label> 
+             <input type="text" name="email" onblur="validate()">
+             <br>
+             <label>(E) Pin Code <span>*</span></label> 
+             <input type="text" name="pincode" onblur="validate()">
+             <br>
+             <label>(F) State / Union Territory <span>*</span></label>
+<select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="dist1">dist1</option>
+  <option value="dist2">dist2</option>
+  <option value="dist3">dist3</option>
+  
+</select>
+             <br>
+             <label>(G) District <span>*</span></label>
+<select style="margin-left: 10px;" name="district" id="btn">
+ <option value="none">Select</option>
+  <option value="dist1">dist1</option>
+  <option value="dist2">dist2</option>
+  <option value="dist3">dist3</option>
+  
+</select>
+<br>
+             <label>(H) Family / Neighbour Epic No.<span>*</span></label> 
+             <input type="text" name="epicNo" onblur="validate()">
+             <br>
+             <label>(I) mobile number <span>*</span>: +91</label> 
+  <input type="text" > <br>
+         </form>
+         <div class="box2">
+  <p>Optional specialties
+  </p>
+</div>
+         <br>
+         <form class="form">
+         <label>(J) Disability (if any)<span>*</span></label> 
+  <label for="vehicle1" > 
+     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" >&nbsp;&nbsp;Visual impairment </label>
+             <label for="vehicle1"> 
+     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">&nbsp;&nbsp;Speech and hearing impairment </label>
+             <label for="vehicle1"> 
+     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">&nbsp;&nbsp;Motion disabling </label>
+             
+         </form>
+  
+<br>
+
+
+
+ 
+             
+  <div class="box2">
+    <p >Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB) <a href="#">List of supported documents</a></p>
+  </div>
+<br>
+
+         <form class="form">
+         <label>(A) Your photo<span>*</span></label> <input type="file" id="vehicle2" name="vehicle2" value="Car" >
+             <br>
+             <label>(B) Age proof<span>*</span></label> <input type="file" id="vehicle2" name="vehicle2" value="Car" >
+             <br>
+           <label>(C) Document type<span>*</span></label> <input type="file" id="vehicle2" name="vehicle2" value="Car" >
+             <br>
+             <label>(D) Address<span>*</span></label> 
+             <select style="margin-left: 10px;" name="address" id="btn">
+ <option value="none">Select</option>
+  <option value="address1">dist1</option>
+  <option value="address2">dist2</option>
+  <option value="address3">dist3</option>
+  
+</select>
+         </form>
+         
+         
+
+<br>
+    <div class="box2">
+      <p >Declaration
+      </p>
+    </div>
+  <br>
+          <form class="form">
+         <label>I declare I declare that according to my best knowledge and belief ,
+I am a citizen of India and of my birth;</label> 
+             <br>
+              <label> City / Village <span>*</span></label> 
+             <input type="text" name="village" onblur="validate()">
+             <br>
+         </form>
+         <button class="btn" name="btn">Submit</button>
+    </div>
+      </div>
+    </div>
+    
+<br>
+<div class="footer">Copyright &copy; 2019 Suven Consultants and Technology Pvt. Ltd.</div>
+
+
+<script type="Text/JavaScript">
+    function regvalidate()
+    
+    {
+    if((document.registerationform.fnametxt.value=="")&&(document.registerationform.snametxt.value==""))
+     {
+      document.getElementById('une').innerHTML = "Name of applicant is Mandatory";
+      registerationform.fnametxt.focus();
+      return(false);
+     }
+    
+
+    
+     
+
+
+    if(document.registerationform.unametxt.value=="")
+      {
+      document.getElementById('une').innerHTML = "Name of the applicant's relative";
+      registerationform.unametxt.focus();
+      return(false);
+     }
+    
+    if(document.registerationform.emailtxt.value=="")
+      {
+      document.getElementById('une').innerHTML = "Either fill nickname of applicant's relative or fill -no-";
+      registerationform.emailtxt.focus();
+      return(false);
+      }
+    
+    
+    else
+       {
+       return(true);
+       }
+    }
+    </script>
+<script>
+          function validate()
+          {
+              var uname = document.getElementById("uname").value;
+              var unam = document.getElementById("unam").value;
+              var una = document.getElementById("una").value;
+              var Email = document.getElementById("Email").value;
+              var password = document.getElementById("password").value;
+              var pattern = document.getElementById("pattern").value;
+              var patcheck = new RegExp("^[a-z0-9]");
+              if(uname==="")             
+                 {
+                  document.getElementById("div1").innerHTML="Mandatory";
+                  document.getElementById("div1").style.color="Red";
+                  
+              }
+              else
+              {
+                  document.getElementById("div1").innerHTML="";
+              }
+
+              if(unam==="")             
+                 {
+                  document.getElementById("div5").innerHTML="Enter valid name ";
+                  document.getElementById("div5").style.color="Red";
+                  
+              }
+              else
+              {
+                  document.getElementById("div5").innerHTML="";
+              }
+
+              if(una==="")             
+                 {
+                  document.getElementById("div6").innerHTML="Enter valid name ";
+                   document.getElementById("div6").style.color="Red";
+                  
+              }
+              else
+              {
+                  document.getElementById("div6").innerHTML="";
+              }
+
+
+              if(Email.indexOf("@")> -1)
+              {
+                  document.getElementById("div2").innerHTML="";
+              }
+               else
+              {
+                  document.getElementById("div2").innerHTML="Enter the correct email address";
+                  document.getElementById("div2").style.color="Red";
+                  
+              }
+              if(password.length<=6)
+              {
+                  document.getElementById("div3").innerHTML="Enter the correct Pin Code";
+                  document.getElementById("div3").style.color="Red";
+              }
+               else
+              {
+                  document.getElementById("div3").innerHTML="";
+              }
+              
+              if(!patcheck.test(pattern))
+              {
+                  document.getElementById("div4").innerHTML="Only Alphabets/Numbers";
+                  document.getElementById("div4").style.color="Red";
+              }
+              else
+              {
+                  document.getElementById("div4").innerHTML="";
+              }
+          }
+      </script>
+</body>
+</html>
